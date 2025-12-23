@@ -135,7 +135,9 @@ func resolveSource(source string, input map[string]interface{}, outputs []map[st
 			return nil
 		}
 		var idx int
-		fmt.Sscanf(subParts[0], "%d", &idx)
+		if _, err := fmt.Sscanf(subParts[0], "%d", &idx); err != nil {
+			return nil
+		}
 		if idx >= 0 && idx < len(outputs) && outputs[idx] != nil {
 			return outputs[idx][subParts[1]]
 		}

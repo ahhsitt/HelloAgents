@@ -59,24 +59,24 @@ func DefaultExporterConfig() ExporterConfig {
 	}
 }
 
-// createTraceExporter 创建追踪导出器
-func createTraceExporter(ctx context.Context, cfg ExporterConfig) (sdktrace.SpanExporter, error) {
+// CreateTraceExporter 创建追踪导出器
+func CreateTraceExporter(ctx context.Context, cfg ExporterConfig) (sdktrace.SpanExporter, error) {
 	switch cfg.Type {
 	case ExporterOTLPGRPC:
-		return createOTLPGRPCTraceExporter(ctx, cfg)
+		return CreateOTLPGRPCTraceExporter(ctx, cfg)
 	case ExporterOTLPHTTP:
-		return createOTLPHTTPTraceExporter(ctx, cfg)
+		return CreateOTLPHTTPTraceExporter(ctx, cfg)
 	case ExporterStdout:
 		return stdouttrace.New(stdouttrace.WithPrettyPrint())
 	case ExporterNone:
-		return &noopSpanExporter{}, nil
+		return &NoopSpanExporter{}, nil
 	default:
 		return nil, fmt.Errorf("unsupported trace exporter type: %s", cfg.Type)
 	}
 }
 
-// createOTLPGRPCTraceExporter 创建 OTLP gRPC 追踪导出器
-func createOTLPGRPCTraceExporter(ctx context.Context, cfg ExporterConfig) (sdktrace.SpanExporter, error) {
+// CreateOTLPGRPCTraceExporter 创建 OTLP gRPC 追踪导出器
+func CreateOTLPGRPCTraceExporter(ctx context.Context, cfg ExporterConfig) (sdktrace.SpanExporter, error) {
 	opts := []otlptracegrpc.Option{
 		otlptracegrpc.WithEndpoint(cfg.Endpoint),
 	}
@@ -102,8 +102,8 @@ func createOTLPGRPCTraceExporter(ctx context.Context, cfg ExporterConfig) (sdktr
 	return otlptrace.New(ctx, client)
 }
 
-// createOTLPHTTPTraceExporter 创建 OTLP HTTP 追踪导出器
-func createOTLPHTTPTraceExporter(ctx context.Context, cfg ExporterConfig) (sdktrace.SpanExporter, error) {
+// CreateOTLPHTTPTraceExporter 创建 OTLP HTTP 追踪导出器
+func CreateOTLPHTTPTraceExporter(ctx context.Context, cfg ExporterConfig) (sdktrace.SpanExporter, error) {
 	opts := []otlptracehttp.Option{
 		otlptracehttp.WithEndpoint(cfg.Endpoint),
 	}
@@ -127,24 +127,24 @@ func createOTLPHTTPTraceExporter(ctx context.Context, cfg ExporterConfig) (sdktr
 	return otlptracehttp.New(ctx, opts...)
 }
 
-// createMetricExporter 创建指标导出器
-func createMetricExporter(ctx context.Context, cfg ExporterConfig) (sdkmetric.Exporter, error) {
+// CreateMetricExporter 创建指标导出器
+func CreateMetricExporter(ctx context.Context, cfg ExporterConfig) (sdkmetric.Exporter, error) {
 	switch cfg.Type {
 	case ExporterOTLPGRPC:
-		return createOTLPGRPCMetricExporter(ctx, cfg)
+		return CreateOTLPGRPCMetricExporter(ctx, cfg)
 	case ExporterOTLPHTTP:
-		return createOTLPHTTPMetricExporter(ctx, cfg)
+		return CreateOTLPHTTPMetricExporter(ctx, cfg)
 	case ExporterStdout:
 		return stdoutmetric.New(stdoutmetric.WithPrettyPrint())
 	case ExporterNone:
-		return &noopMetricExporter{}, nil
+		return &NoopMetricExporter{}, nil
 	default:
 		return nil, fmt.Errorf("unsupported metric exporter type: %s", cfg.Type)
 	}
 }
 
-// createOTLPGRPCMetricExporter 创建 OTLP gRPC 指标导出器
-func createOTLPGRPCMetricExporter(ctx context.Context, cfg ExporterConfig) (sdkmetric.Exporter, error) {
+// CreateOTLPGRPCMetricExporter 创建 OTLP gRPC 指标导出器
+func CreateOTLPGRPCMetricExporter(ctx context.Context, cfg ExporterConfig) (sdkmetric.Exporter, error) {
 	opts := []otlpmetricgrpc.Option{
 		otlpmetricgrpc.WithEndpoint(cfg.Endpoint),
 	}
@@ -169,8 +169,8 @@ func createOTLPGRPCMetricExporter(ctx context.Context, cfg ExporterConfig) (sdkm
 	return otlpmetricgrpc.New(ctx, opts...)
 }
 
-// createOTLPHTTPMetricExporter 创建 OTLP HTTP 指标导出器
-func createOTLPHTTPMetricExporter(ctx context.Context, cfg ExporterConfig) (sdkmetric.Exporter, error) {
+// CreateOTLPHTTPMetricExporter 创建 OTLP HTTP 指标导出器
+func CreateOTLPHTTPMetricExporter(ctx context.Context, cfg ExporterConfig) (sdkmetric.Exporter, error) {
 	opts := []otlpmetrichttp.Option{
 		otlpmetrichttp.WithEndpoint(cfg.Endpoint),
 	}
@@ -194,36 +194,43 @@ func createOTLPHTTPMetricExporter(ctx context.Context, cfg ExporterConfig) (sdkm
 	return otlpmetrichttp.New(ctx, opts...)
 }
 
-// noopSpanExporter 空实现追踪导出器
-type noopSpanExporter struct{}
+// NoopSpanExporter 空实现追踪导出器
+type NoopSpanExporter struct{}
 
-func (e *noopSpanExporter) ExportSpans(ctx context.Context, spans []sdktrace.ReadOnlySpan) error {
+// ExportSpans 导出 spans（空实现）
+func (e *NoopSpanExporter) ExportSpans(ctx context.Context, spans []sdktrace.ReadOnlySpan) error {
 	return nil
 }
 
-func (e *noopSpanExporter) Shutdown(ctx context.Context) error {
+// Shutdown 关闭导出器（空实现）
+func (e *NoopSpanExporter) Shutdown(ctx context.Context) error {
 	return nil
 }
 
-// noopMetricExporter 空实现指标导出器
-type noopMetricExporter struct{}
+// NoopMetricExporter 空实现指标导出器
+type NoopMetricExporter struct{}
 
-func (e *noopMetricExporter) Temporality(kind sdkmetric.InstrumentKind) metricdata.Temporality {
+// Temporality 返回时间性
+func (e *NoopMetricExporter) Temporality(kind sdkmetric.InstrumentKind) metricdata.Temporality {
 	return metricdata.CumulativeTemporality
 }
 
-func (e *noopMetricExporter) Aggregation(kind sdkmetric.InstrumentKind) sdkmetric.Aggregation {
+// Aggregation 返回聚合方式
+func (e *NoopMetricExporter) Aggregation(kind sdkmetric.InstrumentKind) sdkmetric.Aggregation {
 	return nil
 }
 
-func (e *noopMetricExporter) Export(ctx context.Context, rm *metricdata.ResourceMetrics) error {
+// Export 导出指标（空实现）
+func (e *NoopMetricExporter) Export(ctx context.Context, rm *metricdata.ResourceMetrics) error {
 	return nil
 }
 
-func (e *noopMetricExporter) ForceFlush(ctx context.Context) error {
+// ForceFlush 强制刷新（空实现）
+func (e *NoopMetricExporter) ForceFlush(ctx context.Context) error {
 	return nil
 }
 
-func (e *noopMetricExporter) Shutdown(ctx context.Context) error {
+// Shutdown 关闭导出器（空实现）
+func (e *NoopMetricExporter) Shutdown(ctx context.Context) error {
 	return nil
 }

@@ -399,12 +399,8 @@ func (c *QwenClient) buildRequest(req Request, stream bool) qwenRequest {
 		qwenReq.Tools = make([]qwenTool, len(req.Tools))
 		for i, tool := range req.Tools {
 			qwenReq.Tools[i] = qwenTool{
-				Type: "function",
-				Function: qwenFunction{
-					Name:        tool.Name,
-					Description: tool.Description,
-					Parameters:  tool.Parameters,
-				},
+				Type:     "function",
+				Function: qwenFunction(tool),
 			}
 		}
 	}

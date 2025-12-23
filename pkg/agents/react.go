@@ -108,13 +108,13 @@ func (a *ReActAgent) Config() config.AgentConfig {
 
 // AddTool 向 Agent 注册工具
 func (a *ReActAgent) AddTool(tool tools.Tool) {
-	a.registry.Register(tool)
+	_ = a.registry.Register(tool)
 }
 
 // AddTools 批量注册工具
 func (a *ReActAgent) AddTools(toolList ...tools.Tool) {
 	for _, tool := range toolList {
-		a.registry.Register(tool)
+		_ = a.registry.Register(tool)
 	}
 }
 
