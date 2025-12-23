@@ -341,12 +341,8 @@ func (c *OllamaClient) buildRequest(req Request, stream bool) ollamaRequest {
 		ollamaReq.Tools = make([]ollamaToolDef, len(req.Tools))
 		for i, tool := range req.Tools {
 			ollamaReq.Tools[i] = ollamaToolDef{
-				Type: "function",
-				Function: ollamaFunctionDef{
-					Name:        tool.Name,
-					Description: tool.Description,
-					Parameters:  tool.Parameters,
-				},
+				Type:     "function",
+				Function: ollamaFunctionDef(tool),
 			}
 		}
 	}
