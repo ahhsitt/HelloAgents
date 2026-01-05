@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/agents"
-	"github.com/easyops/helloagents-go/pkg/evaluation"
-	"github.com/easyops/helloagents-go/pkg/evaluation/benchmarks/bfcl"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/agents"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation/benchmarks/bfcl"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // BFCLEvaluationTool BFCL 一键评估工具
@@ -151,14 +151,14 @@ func (t *BFCLEvaluationTool) Execute(ctx context.Context, args map[string]interf
 
 	// 构建响应
 	response := map[string]interface{}{
-		"status":           "success",
-		"category":         category,
-		"total_samples":    result.TotalSamples,
-		"success_count":    result.SuccessCount,
-		"accuracy":         fmt.Sprintf("%.2f%%", result.OverallAccuracy*100),
-		"duration":         result.TotalDuration.String(),
-		"report_path":      reportPath,
-		"evaluation_time":  result.EvaluationTime.Format("2006-01-02 15:04:05"),
+		"status":          "success",
+		"category":        category,
+		"total_samples":   result.TotalSamples,
+		"success_count":   result.SuccessCount,
+		"accuracy":        fmt.Sprintf("%.2f%%", result.OverallAccuracy*100),
+		"duration":        result.TotalDuration.String(),
+		"report_path":     reportPath,
+		"evaluation_time": result.EvaluationTime.Format("2006-01-02 15:04:05"),
 	}
 
 	if result.Metrics != nil {

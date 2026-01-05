@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/easyops/helloagents-go/pkg/core/errors"
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/errors"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 	openai "github.com/sashabaranov/go-openai"
 )
 

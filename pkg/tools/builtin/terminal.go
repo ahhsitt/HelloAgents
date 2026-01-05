@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // SecurityMode 定义终端工具的安全模式预设

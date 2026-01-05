@@ -1,7 +1,7 @@
 package gaia
 
 import (
-	"github.com/easyops/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
 )
 
 // Metrics GAIA 指标计算器

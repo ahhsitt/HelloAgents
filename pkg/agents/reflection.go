@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/config"
-	"github.com/easyops/helloagents-go/pkg/core/errors"
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/config"
+	"github.com/ahhsitt/helloagents-go/pkg/core/errors"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // ReflectionAgent 实现自我反思推理模式的 Agent

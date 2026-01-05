@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/easyops/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
 )
 
 // ExportEntry BFCL 导出条目

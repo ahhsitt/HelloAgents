@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // QwenClient 通义千问客户端

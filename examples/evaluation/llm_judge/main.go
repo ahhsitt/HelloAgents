@@ -9,8 +9,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/easyops/helloagents-go/pkg/evaluation"
-	"github.com/easyops/helloagents-go/pkg/evaluation/benchmarks/datagen"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation/benchmarks/datagen"
 )
 
 func main() {

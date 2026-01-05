@@ -7,8 +7,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/easyops/helloagents-go/pkg/protocols/mcp"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/protocols/mcp"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // MCPServerEnvMap MCP 服务器环境变量映射表

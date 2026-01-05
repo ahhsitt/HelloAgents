@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/evaluation"
-	"github.com/easyops/helloagents-go/pkg/evaluation/benchmarks/datagen"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation/benchmarks/datagen"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // WinRateTool Win Rate 评估工具
@@ -145,12 +145,12 @@ func (t *WinRateTool) Execute(ctx context.Context, args map[string]interface{}) 
 
 	// 构建响应
 	response := map[string]interface{}{
-		"status":          "success",
+		"status":            "success",
 		"total_comparisons": result.TotalSamples,
-		"duration":        result.TotalDuration.String(),
-		"report_path":     reportPath,
-		"result_path":     jsonPath,
-		"evaluation_time": result.EvaluationTime.Format("2006-01-02 15:04:05"),
+		"duration":          result.TotalDuration.String(),
+		"report_path":       reportPath,
+		"result_path":       jsonPath,
+		"evaluation_time":   result.EvaluationTime.Format("2006-01-02 15:04:05"),
 	}
 
 	if result.Metrics != nil {

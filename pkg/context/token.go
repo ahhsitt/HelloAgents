@@ -7,7 +7,7 @@ package context
 import (
 	"strings"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 	"github.com/pkoukk/tiktoken-go"
 )
 

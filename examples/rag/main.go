@@ -8,9 +8,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/core/message"
-	"github.com/easyops/helloagents-go/pkg/rag"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/rag"
 )
 
 func main() {
@@ -188,4 +188,3 @@ func truncate(s string, maxLen int) string {
 	}
 	return s[:maxLen] + "..."
 }
-

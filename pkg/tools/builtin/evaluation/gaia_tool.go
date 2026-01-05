@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/agents"
-	"github.com/easyops/helloagents-go/pkg/evaluation"
-	"github.com/easyops/helloagents-go/pkg/evaluation/benchmarks/gaia"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/agents"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation/benchmarks/gaia"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // GAIAEvaluationTool GAIA 一键评估工具

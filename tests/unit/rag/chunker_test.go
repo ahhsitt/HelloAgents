@@ -3,7 +3,7 @@ package rag_test
 import (
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/rag"
+	"github.com/ahhsitt/helloagents-go/pkg/rag"
 )
 
 func TestNewRecursiveCharacterChunker(t *testing.T) {

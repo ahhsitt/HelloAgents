@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // VLLMClient vLLM 客户端

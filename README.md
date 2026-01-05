@@ -22,7 +22,7 @@
 ### 安装
 
 ```bash
-go get github.com/easyops/helloagents-go
+go get github.com/ahhsitt/helloagents-go
 ```
 
 ### 环境配置
@@ -44,8 +44,8 @@ import (
     "fmt"
     "os"
 
-    "github.com/easyops/helloagents-go/pkg/agents"
-    "github.com/easyops/helloagents-go/pkg/core/llm"
+    "github.com/ahhsitt/helloagents-go/pkg/agents"
+    "github.com/ahhsitt/helloagents-go/pkg/core/llm"
 )
 
 func main() {
@@ -74,10 +74,10 @@ import (
     "fmt"
     "os"
 
-    "github.com/easyops/helloagents-go/pkg/agents"
-    "github.com/easyops/helloagents-go/pkg/core/llm"
-    "github.com/easyops/helloagents-go/pkg/tools"
-    "github.com/easyops/helloagents-go/pkg/tools/builtin"
+    "github.com/ahhsitt/helloagents-go/pkg/agents"
+    "github.com/ahhsitt/helloagents-go/pkg/core/llm"
+    "github.com/ahhsitt/helloagents-go/pkg/tools"
+    "github.com/ahhsitt/helloagents-go/pkg/tools/builtin"
 )
 
 func main() {
@@ -114,7 +114,7 @@ import (
     "context"
     "fmt"
 
-    "github.com/easyops/helloagents-go/pkg/rag"
+    "github.com/ahhsitt/helloagents-go/pkg/rag"
 )
 
 func main() {
@@ -151,7 +151,7 @@ import (
     "context"
     "fmt"
 
-    "github.com/easyops/helloagents-go/pkg/protocols/mcp"
+    "github.com/ahhsitt/helloagents-go/pkg/protocols/mcp"
 )
 
 func main() {
@@ -182,7 +182,7 @@ func main() {
 
 ```bash
 # 克隆仓库
-git clone https://github.com/easyops/helloagents-go.git
+git clone https://github.com/ahhsitt/helloagents-go.git
 cd helloagents-go
 
 # 设置环境变量

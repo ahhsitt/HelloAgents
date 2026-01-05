@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 func TestNewFuncTool(t *testing.T) {

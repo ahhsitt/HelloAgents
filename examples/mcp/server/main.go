@@ -11,7 +11,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/easyops/helloagents-go/pkg/protocols/mcp"
+	"github.com/ahhsitt/helloagents-go/pkg/protocols/mcp"
 )
 
 func main() {

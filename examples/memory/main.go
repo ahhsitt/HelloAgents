@@ -8,9 +8,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/core/message"
-	"github.com/easyops/helloagents-go/pkg/memory"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/memory"
 )
 
 func main() {

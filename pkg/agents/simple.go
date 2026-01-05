@@ -6,11 +6,11 @@ import (
 	"sync"
 	"time"
 
-	agentctx "github.com/easyops/helloagents-go/pkg/context"
-	"github.com/easyops/helloagents-go/pkg/core/config"
-	"github.com/easyops/helloagents-go/pkg/core/errors"
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	agentctx "github.com/ahhsitt/helloagents-go/pkg/context"
+	"github.com/ahhsitt/helloagents-go/pkg/core/config"
+	"github.com/ahhsitt/helloagents-go/pkg/core/errors"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // SimpleAgent 简单对话代理

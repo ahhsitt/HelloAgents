@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/memory"
+	"github.com/ahhsitt/helloagents-go/pkg/memory"
 )
 
 func TestNewEpisodicMemory(t *testing.T) {

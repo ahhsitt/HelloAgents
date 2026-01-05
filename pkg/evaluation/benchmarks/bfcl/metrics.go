@@ -1,7 +1,7 @@
 package bfcl
 
 import (
-	"github.com/easyops/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
 )
 
 // Metrics BFCL 指标计算器

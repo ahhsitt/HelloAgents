@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/agents"
-	"github.com/easyops/helloagents-go/pkg/core/config"
-	"github.com/easyops/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/agents"
+	"github.com/ahhsitt/helloagents-go/pkg/core/config"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
 )
 
 // MockAgent 用于测试的 Mock Agent

@@ -6,12 +6,12 @@ import (
 	"sync"
 	"time"
 
-	agentctx "github.com/easyops/helloagents-go/pkg/context"
-	"github.com/easyops/helloagents-go/pkg/core/config"
-	"github.com/easyops/helloagents-go/pkg/core/errors"
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/core/message"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	agentctx "github.com/ahhsitt/helloagents-go/pkg/context"
+	"github.com/ahhsitt/helloagents-go/pkg/core/config"
+	"github.com/ahhsitt/helloagents-go/pkg/core/errors"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // ReActAgent 实现 ReAct (Reasoning + Acting) 推理模式的 Agent

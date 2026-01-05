@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/agents"
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/agents"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // mockProvider implements llm.Provider for testing
