@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 
-	"github.com/easyops/helloagents-go/pkg/protocols/mcp"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/protocols/mcp"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // MCPWrappedTool 包装的 MCP 工具

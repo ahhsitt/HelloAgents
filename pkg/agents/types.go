@@ -3,7 +3,7 @@ package agents
 import (
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // Input 定义 Agent 的输入结构

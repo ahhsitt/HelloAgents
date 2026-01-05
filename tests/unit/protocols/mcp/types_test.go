@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/protocols/mcp"
+	"github.com/ahhsitt/helloagents-go/pkg/protocols/mcp"
 )
 
 func TestJSONRPCRequest(t *testing.T) {

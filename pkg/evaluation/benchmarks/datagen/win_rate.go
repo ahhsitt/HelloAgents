@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/core/message"
-	"github.com/easyops/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
 )
 
 // Win Rate 评估结果常量

@@ -3,7 +3,7 @@ package mcp_test
 import (
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/protocols/mcp"
+	"github.com/ahhsitt/helloagents-go/pkg/protocols/mcp"
 )
 
 func TestCreateContext(t *testing.T) {

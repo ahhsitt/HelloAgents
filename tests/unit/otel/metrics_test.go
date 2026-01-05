@@ -5,7 +5,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/otel"
+	"github.com/ahhsitt/helloagents-go/pkg/otel"
 )
 
 func TestNewInMemoryMetrics(t *testing.T) {

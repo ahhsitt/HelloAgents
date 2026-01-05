@@ -3,7 +3,7 @@ package llm
 import (
 	"context"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // GenerateStream 生成响应（流式）

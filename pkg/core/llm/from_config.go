@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/config"
+	"github.com/ahhsitt/helloagents-go/pkg/core/config"
 )
 
 // FromConfig 从配置创建 LLM Provider

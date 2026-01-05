@@ -8,8 +8,8 @@ import (
 	"time"
 	"unicode"
 
-	"github.com/easyops/helloagents-go/pkg/agents"
-	"github.com/easyops/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/agents"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
 )
 
 // Evaluator GAIA 评估器

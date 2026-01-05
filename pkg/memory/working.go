@@ -7,7 +7,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // workingMessage 带有重要性和向量的消息

@@ -5,8 +5,8 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/core/errors"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/core/errors"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // mockTool implements tools.Tool for testing

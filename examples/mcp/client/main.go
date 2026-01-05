@@ -2,8 +2,8 @@
 //
 // 演示如何使用 MCP 客户端连接到服务器并调用工具。
 // 运行方式:
-//   1. 先在一个终端运行服务器: go run examples/mcp/server/main.go
-//   2. 修改此文件连接到服务器，或使用内置服务器测试
+//  1. 先在一个终端运行服务器: go run examples/mcp/server/main.go
+//  2. 修改此文件连接到服务器，或使用内置服务器测试
 package main
 
 import (
@@ -13,7 +13,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/protocols/mcp"
+	"github.com/ahhsitt/helloagents-go/pkg/protocols/mcp"
 )
 
 func main() {

@@ -4,8 +4,8 @@ package agents
 import (
 	"context"
 
-	"github.com/easyops/helloagents-go/pkg/core/config"
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/config"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // Agent 定义智能代理的核心接口

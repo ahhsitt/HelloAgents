@@ -8,10 +8,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/easyops/helloagents-go/pkg/agents"
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/tools"
-	"github.com/easyops/helloagents-go/pkg/tools/builtin"
+	"github.com/ahhsitt/helloagents-go/pkg/agents"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/tools/builtin"
 )
 
 func main() {

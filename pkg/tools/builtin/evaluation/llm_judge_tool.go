@@ -7,10 +7,10 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/llm"
-	"github.com/easyops/helloagents-go/pkg/evaluation"
-	"github.com/easyops/helloagents-go/pkg/evaluation/benchmarks/datagen"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation/benchmarks/datagen"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // LLMJudgeTool LLM Judge 评估工具

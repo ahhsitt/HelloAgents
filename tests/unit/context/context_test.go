@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	agentctx "github.com/easyops/helloagents-go/pkg/context"
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	agentctx "github.com/ahhsitt/helloagents-go/pkg/context"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 func TestEstimatedCounter_Count(t *testing.T) {

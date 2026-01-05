@@ -13,8 +13,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/easyops/helloagents-go/pkg/evaluation"
-	"github.com/easyops/helloagents-go/pkg/evaluation/benchmarks/gaia"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation/benchmarks/gaia"
 )
 
 func main() {
@@ -22,7 +22,7 @@ func main() {
 
 	// 1. 创建数据集
 	dataDir := "./gaia_data"
-	level := 1         // 1=简单, 2=中等, 3=困难, 0=全部
+	level := 1            // 1=简单, 2=中等, 3=困难, 0=全部
 	split := "validation" // validation 或 test
 
 	dataset := gaia.NewDataset(dataDir, level, split)

@@ -8,8 +8,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/easyops/helloagents-go/pkg/agents"
-	"github.com/easyops/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/agents"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
 )
 
 func main() {

@@ -3,7 +3,7 @@ package memory
 import (
 	"context"
 
-	"github.com/easyops/helloagents-go/pkg/core/llm"
+	"github.com/ahhsitt/helloagents-go/pkg/core/llm"
 )
 
 // OpenAIEmbedder OpenAI 嵌入实现

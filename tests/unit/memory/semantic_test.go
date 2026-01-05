@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/memory"
+	"github.com/ahhsitt/helloagents-go/pkg/memory"
 )
 
 // mockEmbedder implements memory.Embedder for testing

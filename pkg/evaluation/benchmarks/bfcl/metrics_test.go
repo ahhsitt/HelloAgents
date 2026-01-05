@@ -3,7 +3,7 @@ package bfcl
 import (
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/evaluation"
+	"github.com/ahhsitt/helloagents-go/pkg/evaluation"
 )
 
 func TestNewMetrics(t *testing.T) {

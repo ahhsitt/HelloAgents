@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
-	"github.com/easyops/helloagents-go/pkg/memory"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/memory"
 )
 
 func TestNewWorkingMemory_Defaults(t *testing.T) {

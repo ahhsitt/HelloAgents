@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // Gatherer 定义从来源收集上下文包的接口。

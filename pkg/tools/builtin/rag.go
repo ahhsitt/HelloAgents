@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/easyops/helloagents-go/pkg/rag"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/rag"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // RAGTool RAG 检索工具

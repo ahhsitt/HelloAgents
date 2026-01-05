@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/tools/builtin"
+	"github.com/ahhsitt/helloagents-go/pkg/tools/builtin"
 )
 
 func setupNoteTool(t *testing.T) (*builtin.NoteTool, string) {

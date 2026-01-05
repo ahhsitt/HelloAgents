@@ -5,7 +5,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/easyops/helloagents-go/pkg/core/errors"
+	"github.com/ahhsitt/helloagents-go/pkg/core/errors"
 )
 
 // RetryFunc 可重试的函数类型

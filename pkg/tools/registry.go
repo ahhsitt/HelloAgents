@@ -3,7 +3,7 @@ package tools
 import (
 	"sync"
 
-	"github.com/easyops/helloagents-go/pkg/core/errors"
+	"github.com/ahhsitt/helloagents-go/pkg/core/errors"
 )
 
 // Registry 工具注册表

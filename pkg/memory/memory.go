@@ -4,7 +4,7 @@ package memory
 import (
 	"context"
 
-	"github.com/easyops/helloagents-go/pkg/core/message"
+	"github.com/ahhsitt/helloagents-go/pkg/core/message"
 )
 
 // ConversationMemory 对话记忆接口

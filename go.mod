@@ -1,4 +1,4 @@
-module github.com/easyops/helloagents-go
+module github.com/ahhsitt/helloagents-go
 
 go 1.24.0
 

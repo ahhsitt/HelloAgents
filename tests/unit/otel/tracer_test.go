@@ -5,7 +5,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/easyops/helloagents-go/pkg/otel"
+	"github.com/ahhsitt/helloagents-go/pkg/otel"
 )
 
 func TestNoopTracer(t *testing.T) {

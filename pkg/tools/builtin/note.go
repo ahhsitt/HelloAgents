@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	agentctx "github.com/easyops/helloagents-go/pkg/context"
-	"github.com/easyops/helloagents-go/pkg/tools"
+	agentctx "github.com/ahhsitt/helloagents-go/pkg/context"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // NoteType 定义笔记类型

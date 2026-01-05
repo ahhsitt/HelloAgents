@@ -9,7 +9,7 @@ import (
 	"go/token"
 	"strconv"
 
-	"github.com/easyops/helloagents-go/pkg/tools"
+	"github.com/ahhsitt/helloagents-go/pkg/tools"
 )
 
 // Calculator 计算器工具
