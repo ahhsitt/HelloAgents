@@ -208,6 +208,7 @@ go run examples/mcp/client/main.go  # MCP 客户端
 | `examples/rag-advanced/` | 高级 RAG (MQE, HyDE) |
 | `examples/mcp/` | MCP 协议客户端/服务端 |
 | `examples/evaluation/` | Agent 性能评估 |
+| `examples/image/` | 文生图调用 |
 
 ## 测试
 
